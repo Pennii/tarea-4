@@ -14,13 +14,14 @@
         document.write("la lista de numeros es: </br>")
         for(var l=0; l<i; l++){
              numeros[l]=prompt("ingrese el numero");
+             numeros[l]=parseInt(numeros[l])
              console.log(numeros[l]);
              document.write(numeros[l]+"</br>")            
         }
         var max=numeros[0];
         for(var c=0; c<i; c++){
             if(numeros[c]>max){
-                max=numeros[c];
+                max=(numeros[c]);
             }
         }
         console.log(max);
